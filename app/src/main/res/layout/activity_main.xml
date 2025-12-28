@@ -1,19 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="50dp"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <TextView
+        android:id="@+id/welcom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:text="Welcome to Robin"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/robin"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+
+    />
+
+   <EditText
+       android:id="@+id/edtName"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="@color/black"
+       android:hint="Full Name"
+       android:layout_margin="20dp"
+    />
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:layout_margin="20dp"
+        />
+    <EditText
+        android:id="@+id/edPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:layout_margin="20dp"
+        />
+    <EditText
+        android:id="@+id/edConPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:id="@+id/bt_Sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:backgroundTint="@color/green"
+        android:textSize="21sp"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ALREADY HAVE AN ACCOUNT? SIGN IN"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:textStyle="bold"
+
+        />
+
+</LinearLayout>
